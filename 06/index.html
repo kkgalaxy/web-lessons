@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <title>Анкета</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+    <h1 style="color:#861313" title=>Анкета відвідувача ресторану</h1>
+        <fieldset>
+        <legend><h1 style="color:#47c7fa">Контакти</h1></legend>
+    <div>
+    <div class="group">
+        <label for="">Ім'я</label>
+        <input type="text" style="width: 300px; height: 25px;" placeholder="Введіть ім'я" required>
+    </div>
+    <br>
+    <div class="group">
+        <label for="">Телефон</label>
+        <input type="tel" style="width: 300px; height: 25px;" maxlength="13" minlength="6" placeholder="Введіть номер" required>
+    </div>
+    <br>
+    <div class="group">
+        <label for="">Email</label>
+        <input type="email" style="width: 300px; height: 25px;" placeholder="Введіть свій e-mail" required>
+    </div>
+    <br>
+    <div class="group">
+        <label for="">Дата відвідування</label>
+        <input type="date" style="width: 300px; height: 25px;">
+    </div>
+</fieldset>
+</div>
+</form>
+    <fieldset>
+    <legend><h1 style="color:#47c7fa">Персональна інформація</h1></legend>
+<div class="group">
+    <label for="">Вік</label>
+    <input type="number" style="width: 300px; height: 25px; color:#572a2a;" min="1" max="120" step="1">
+</div>
+<br>
+<div class="group">
+    <label style="height: 15px;" for="">Улюблена кухня</label>
+    <select>
+    <option value="us">Американська</option>
+    <option selected value="ua">Українська</option>
+    <option value="ru">Російська</option>
+    </select>
+</div>
+<br>
+<div class="group">
+    <label style="height: 40px;" for="">Які страви ви хотіли би бачити в нашому меню?</label>
+    <textarea class="comment" name="helps" id="" cols="30" rows="5" placeholder="Допоможіть компанії розвиватися"></textarea>
+</div>
+</fieldset>
+<div>
+    <fieldset>
+        <legend><h1 style="color:#47c7fa">Оцінка ресторану</h1></legend>
+        <label for="">Як ви дізналися про наш ресторан?</label>
+<br><input type="radio" name="choice" value="1">Поруч з будинком/роботою
+<br><input type="radio" name="choice" value="2">Реклама
+<br><input type="radio" name="choice" value="3">Порадили знайомі
+<br><input type="radio" name="choice" value="4">Пошук в мережі інтернет
+<br><input type="radio" name="choice" value="5">Інше
+<p><label for="">Чи будете ви рекомендувати наш ресторан знайомим?</label>
+<br><input type="radio" name="ask" value="yes"checked>Так
+<br><input type="radio" name="ask" value="no">Ні
+</div>
+</fieldset>
+<br>
+<button type="submit" name="send">Відправити</button>
+</body>
+</html>
